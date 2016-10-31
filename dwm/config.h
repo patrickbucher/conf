@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-24-*-*-*-*-*-*-*";
+static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -34,8 +34,8 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define ALTKEY Mod1Mask
-#define MODKEY Mod4Mask
+#define MODKEY Mod1Mask
+#define SUPKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -88,10 +88,10 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ ALTKEY,			XK_Shift_L,spawn, 	   {.v = switchkb} },
-	{ NULL,				0x1008ff11,spawn,          {.v = downvol} },
-	{ NULL,				0x1008ff13,spawn,          {.v = upvol} },
-	{ NULL,				0x1008ff12,spawn,          {.v = mute} } 
+	{ SUPKEY,			            XK_Tab,spawn,          {.v = switchkb} },
+	{ NULL,				0x1008ff11, spawn,          {.v = downvol} },
+	{ NULL,				0x1008ff13, spawn,          {.v = upvol} },
+	{ NULL,				0x1008ff12, spawn,          {.v = mute} } 
 };
 
 /* button definitions */
