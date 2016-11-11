@@ -10,3 +10,5 @@ set shiftwidth=4
 set autoindent
 
 set noerrorbells
+
+autocmd FileType make setlocal noexpandtab
