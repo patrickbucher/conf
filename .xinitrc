@@ -7,4 +7,5 @@ while true; do
     sleep 10
 done &
 setxkbmap ch
+xset -dpms s off
 exec dwm
