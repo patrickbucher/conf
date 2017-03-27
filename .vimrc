@@ -12,3 +12,10 @@ set autoindent
 set noerrorbells
 
 autocmd FileType make setlocal noexpandtab
+autocmd FileType python setlocal textwidth=79
+autocmd FileType go setlocal textwidth=80
+
+au BufNewFile,BufRead *.md setf markdown
+autocmd FileType markdown set textwidth=80
+
+colo darkblue
