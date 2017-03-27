@@ -15,5 +15,6 @@ autocmd FileType make setlocal noexpandtab
 autocmd FileType python setlocal textwidth=79
 autocmd BufNewFile,BufRead *.md setf markdown
 autocmd FileType markdown setlocal textwidth=80
+autocmd FileType go setlocal textwidth=80
 
 colo darkblue
