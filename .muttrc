@@ -17,16 +17,18 @@ set use_from=yes
 set realname="Patrick Bucher"
 
 # Folders
-set record="=Sent"
-set postponed="=Drafts"
-set trash="=Trash"
+set record="=Gesendete Objekte"
+set postponed="=Entwürfe"
+set trash="=Papierkorb"
 
 # Security
 set ssl_starttls=yes
 set ssl_force_tls=yes
 
 # Polling
-set mail_check=60
+set mail_check=10
 
 # Editor
 set editor='vim'
+
+source ~/.mutt/gpg.rc

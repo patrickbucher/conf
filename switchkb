@@ -1,0 +1,8 @@
+#!/bin/sh
+
+layout="$(setxkbmap -query | grep layout | egrep -o [a-z]{2}$)"
+if [ "$layout" == "ch" ]; then
+    setxkbmap ru
+elif [ "$layout" = "ru" ]; then
+    setxkbmap ch
+fi
