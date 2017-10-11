@@ -1,0 +1,13 @@
+#!/bin/sh
+
+INFILE="$1"
+OUTFILE="`basename -s '.md' "$INFILE"`.pdf"
+
+pandoc -N -S -s \
+    --variable papersize=a4 \
+    --variable documentclass=scrartcl \
+    --variable classoption=11pt \
+    --variable fontfamily=ebgaramond,helvet \
+    --variable lang=de \
+    --variable urlcolor=blue \
+    $INFILE -o $OUTFILE
