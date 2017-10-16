@@ -3,11 +3,14 @@
 INFILE="$1"
 OUTFILE="`basename -s '.md' "$INFILE"`.pdf"
 
-pandoc -N -S -s \
+pandoc -S -s \
+    --latex-engine=xelatex \
     --variable papersize=a4 \
     --variable documentclass=scrartcl \
     --variable classoption=11pt \
-    --variable fontfamily=ebgaramond,helvet \
+    --variable mainfont="EB Garamond" \
+    --variable sansfont="Open Sans" \
+    --variable monofont="DejaVu Sans Mono" \
     --variable lang=de \
     --variable urlcolor=blue \
     $INFILE -o $OUTFILE
