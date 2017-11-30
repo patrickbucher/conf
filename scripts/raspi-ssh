@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ssh pi@`sudo arp-scan --interface wlp2s0 -l | grep -i 'b8:27:eb:0b:44:f1' | head -n 1 | cut -f1`
