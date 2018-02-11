@@ -1,0 +1,15 @@
+Description='Template for HSLU connection'
+Interface=wlp3s0
+Connection=Wireless
+ESSID=hslu
+Security=wpa-configsection
+IP=dhcp
+WPAConfigSection=(
+    'ssid="hslu"'
+    'key_mgmt=WPA-EAP'
+    'identity="ibbucher"'
+    'password=hash:TODO'
+)
+
+# TODO: fill in the password
+# echo -n 'password in plaintext' | iconv -f utf16le | openssl md4
