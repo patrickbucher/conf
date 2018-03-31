@@ -1,6 +1,11 @@
-set enc=utf-8
+call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go'
+Plug 'dhruvasagar/vim-table-mode'
+call plug#end()
 
+set enc=utf-8
 set number
+
 syntax on
 filetype on
 
@@ -11,9 +16,6 @@ set autoindent
 
 set noerrorbells
 
-autocmd FileType make setlocal noexpandtab
+colo Mustang
 
-autocmd BufNewFile,BufRead *.md setf markdown
-autocmd FileType markdown setlocal textwidth=80
-
-colo darkblue
+let g:table_mode_corner='|'
