@@ -1,7 +1,17 @@
 #!/bin/sh
 
 INTERFACE='wlp3s0'
-MAC='b8:27:eb:0b:44:f1'
-IP=$(sudo arp-scan --interface "$INTERFACE" -l | grep -i "$MAC" | head -n 1 | cut -f1)
+
+MAC_TEST='b8:27:eb:0b:44:f1'
+MAC_PROD='b8:27:eb:08:59:b0'
+
+if [ "$1" = "prod" ]
+then
+    MAC="$MAC_PROD"
+else
+    MAC="$MAC_TEST"
+fi
+
+IP=$(sudo arp-scan -N --interface "$INTERFACE" -l | grep -i "$MAC" | head -n 1 | cut -f1)
 echo $IP
 ssh pi@"$IP"
