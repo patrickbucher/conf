@@ -16,6 +16,10 @@ set autoindent
 
 set noerrorbells
 
-colo Mustang
+if &t_Co == 8
+    colo default
+elseif &t_Co >= 255
+    colo Mustang
+endif
 
 let g:table_mode_corner='|'
