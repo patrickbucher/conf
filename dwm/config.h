@@ -27,7 +27,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	//{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+    {NULL, NULL, NULL, 0, 0, 0}
 };
 
 /* layout(s) */
@@ -97,14 +98,14 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
     { MODKEY,			            XK_Tab,spawn,              {.v = switchkb} },
-	{ NULL,				0x1008ff11, spawn,                     {.v = downvol} },
-	{ NULL,				0x1008ff13, spawn,                     {.v = upvol} },
-	{ NULL,				0x1008ff12, spawn,                     {.v = mute} } 
+	{ 0,				0x1008ff11, spawn,                     {.v = downvol} },
+	{ 0,				0x1008ff13, spawn,                     {.v = upvol} },
+	{ 0,				0x1008ff12, spawn,                     {.v = mute} } 
 
 };
 
 /* button definitions */
-/* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
+/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
