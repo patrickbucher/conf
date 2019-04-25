@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
+Plug 'maralla/completor.vim'
+Plug 'mdempsky/gocode'
 Plug 'dhruvasagar/vim-table-mode'
 call plug#end()
 
@@ -17,9 +19,11 @@ set autoindent
 set noerrorbells
 
 if &t_Co == 8
-    colo default
+    colo darkblue
 elseif &t_Co >= 255
-    colo Mustang
+    colo wombat256
 endif
 
 let g:table_mode_corner='|'
+let g:go_fmt_autosave=1
+let g:go_fmt_command="goimports"
