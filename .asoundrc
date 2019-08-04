@@ -1,5 +1,19 @@
+# to deactivate HDMI
+
 pcm.!default {
     type hw
     card 0
     device 3
+}
+
+# to make USB primary
+
+pcm.!default {
+	type hw
+	card 1
+}
+
+ctl.!default {
+	type hw
+	card 1
 }
