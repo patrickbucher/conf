@@ -33,6 +33,7 @@ make && sudo make install
 cp ~/software/conf/.xinitrc ~/
 sudo cp ~/software/conf/scripts/switchkb /usr/bin/
 sudo ln -sf /usr/bin/startx /usr/bin/x
+sudo ln -sf /usr/bin/pinentry-ncurses /usr/bin/pinentry
 
 cp ~/software/conf/user-dirs.dirs ~/.config/
 mkdir ~/downloads
