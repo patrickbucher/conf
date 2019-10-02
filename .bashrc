@@ -6,8 +6,8 @@
 [[ $- != *i* ]] && return
 
 # history
-HISTSIZE=
-HISTFILESIZE=
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 # optics
 alias ls='ls --color=auto'
@@ -44,3 +44,9 @@ alias gbl='git blame'
 
 # readline editing mode
 set -o vi
+
+# GPG in mutt
+export GPG_TTY=$(tty)
+
+# Java Swing applications (IntelliJ)
+export _JAVA_AWT_WM_NONREPARENTING=1
