@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "xos4 Terminus:pixelsize=24:antialias=true:autohint=true:lang=ru";
+static char *font = "DejaVu Sans Mono:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
