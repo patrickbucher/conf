@@ -17,11 +17,12 @@ PS1='$ '
 export GOROOT='/usr/lib/go'
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
-export PATH="$PATH:$GOBIN:$HOME"
 
 # Node.js
 export NPM_PACKAGES="$HOME/.npm-packages/bin"
-export PATH="$PATH:$NPM_PACKAGES"
+
+# Path
+export PATH="$PATH:$NPM_PACKAGES:$GOBIN:$HOME/bin"
 
 # tmux
 alias t='tmux'
