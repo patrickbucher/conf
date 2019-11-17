@@ -42,6 +42,7 @@ alias gdf='git diff'
 alias glg='git log'
 alias gmv='git mv'
 alias gbl='git blame'
+alias gmg='git merge'
 
 # readline editing mode
 set -o vi
@@ -51,3 +52,13 @@ export GPG_TTY=$(tty)
 
 # Java Swing applications (IntelliJ)
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# edit all files with content matching a pattern (using rg and vim)
+function virg() {
+    files="$(rg -il $1 | tr '\n' ' ')"
+    if [ -z "$files" ]
+    then
+        return
+    fi
+    vim -p $files
+}
