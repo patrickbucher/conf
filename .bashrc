@@ -44,6 +44,7 @@ alias gdf='git diff'
 alias glg='git log'
 alias gmv='git mv'
 alias gbl='git blame'
+alias gmg='git merge'
 
 # GPG in mutt
 export GPG_TTY=$(tty)
@@ -70,4 +71,14 @@ function tps() {
     git -C ~/.task add ~/.task/*.data || return 1
     git -C ~/.task commit -m 'update' || return 1
     git -C ~/.task push || return 1
+}
+
+# edit all files with content matching a pattern (using rg and vim)
+function virg() {
+    files="$(rg -il $1 | tr '\n' ' ')"
+    if [ -z "$files" ]
+    then
+        return
+    fi
+    vim -p $files
 }
