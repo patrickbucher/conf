@@ -5,13 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# history
+# unlimited history
 HISTSIZE=-1
 HISTFILESIZE=-1
 
-# optics
-alias ls='ls --color=auto'
+# prompt
 PS1='$ '
+
+# vi readline editing mode
+set -o vi
 
 # golang
 export GOROOT='/usr/lib/go'
@@ -43,11 +45,29 @@ alias glg='git log'
 alias gmv='git mv'
 alias gbl='git blame'
 
-# readline editing mode
-set -o vi
-
 # GPG in mutt
 export GPG_TTY=$(tty)
 
-# Java Swing applications (IntelliJ)
+# "grey" Java Swing applications (IntelliJ, NetBeans)
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Task Warrior
+alias tad='task add'
+alias tdn='task done'
+alias tdl='task delete'
+alias tmf='task modify'
+alias ted='task edit'
+function trs() {
+    # task reset
+    git -C ~/.task checkout -- * || return 1
+}
+function tup() {
+    # task update
+    git -C ~/.task pull || return 1
+}
+function tps() {
+    # task push
+    git -C ~/.task add ~/.task/*.data || return 1
+    git -C ~/.task commit -m 'update' || return 1
+    git -C ~/.task push || return 1
+}
