@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'update_submodules' }
 call plug#end()
 
 set enc=utf-8
