@@ -2,11 +2,11 @@
 
 sudo pacman -S xorg-server xf86-video-intel xorg-xinit xorg-xset xorg-xsetroot \
 	make gcc pkgconfig libxft libxinerama libxrandr \
-	xdg-user-dirs gtk-chtheme lxappearance gtk-engines
+	xdg-user-dirs gtk-chtheme lxappearance gtk-engines qterminal
 
 mkdir -p ~/software
 cd ~/software
-rm -rf dwm dmenu st slock conf
+rm -rf dwm dmenu slock conf
 
 git clone https://git.suckless.org/dwm
 git clone https://git.suckless.org/dmenu
@@ -25,9 +25,6 @@ cd ~/software/dmenu
 make && sudo make install
 
 cd ~/software/slock
-make && sudo make install
-
-cd ~/software/st
 make && sudo make install
 
 cp ~/software/conf/.xinitrc ~/
