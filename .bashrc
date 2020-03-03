@@ -10,7 +10,7 @@ HISTSIZE=-1
 HISTFILESIZE=-1
 
 # prompt
-PS1='$ '
+PS1='\u@\h:\w$ '
 
 # vi readline editing mode
 set -o vi
