@@ -10,7 +10,10 @@ HISTSIZE=-1
 HISTFILESIZE=-1
 
 # prompt
-PS1='\u@\h:\w$ '
+PS1='\u@\h:[\w]$ '
+
+# colors
+alias ls='ls --color=auto'
 
 # vi readline editing mode
 set -o vi
