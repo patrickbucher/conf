@@ -1,0 +1,14 @@
+font:
+  size: 10
+  normal:
+    family: 'DejaVu Sans Mono'
+    style: Regular
+  bold:
+    family: 'DejaVu Sans Mono'
+    style: Bold
+  italic:
+    family: 'DejaVu Sans Mono'
+    style: Italic
+  bold_italic:
+    family: 'DejaVu Sans Mono'
+    style: Bold Italic
