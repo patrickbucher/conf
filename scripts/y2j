@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import json
+import sys
+
+import yaml
+
+input_data = ''
+for line in sys.stdin:
+    input_data += f'{line}\n'
+
+data_dict = yaml.load(input_data, Loader=yaml.SafeLoader)
+print(json.dumps(data_dict))
