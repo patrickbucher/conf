@@ -3,6 +3,9 @@ Plug 'fatih/vim-go'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'scrooloose/nerdtree'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'rodjek/vim-puppet'
+Plug 'godlygeek/tabular'
+Plug 'vim-syntastic/syntastic',
 call plug#end()
 
 set enc=utf-8
@@ -45,3 +48,12 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " F6 opens NerdTree
 map <F6> :NERDTree<Cr>
+
+" F8 runs auto lint (according PIP 8, hence F8)
+map <F8> :PymodeLintAuto<Cr>
+
+" syntastic only for ruby (puppet)
+let g:syntastic_mode_map = {
+    \ "mode": "passive",
+    \ "active_filetypes": ["ruby"],
+    \ "passive_filetypes": [] }
