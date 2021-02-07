@@ -16,3 +16,6 @@
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (package-initialize)
+
+(setq geiser-mit-binary "/usr/bin/mit-scheme")
+(setq geiser-active-implementations '(mit))
