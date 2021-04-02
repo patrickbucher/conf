@@ -6,6 +6,7 @@ Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
 Plug 'vim-syntastic/syntastic', { 'for': 'puppet' }
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 set enc=utf-8
@@ -48,6 +49,9 @@ let g:table_mode_corner = '|'
 " commonly used YAML configuration
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Elixir
+au BufRead,BufNewFile *.{ex,exs} setlocal ts=2 sts=2 sw=2 expandtab
 
 " F6 opens NerdTree
 map <F6> :NERDTree<Cr>
