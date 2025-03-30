@@ -13,5 +13,5 @@ xset -b
 xset -dpms
 numlockx
 setxkbmap -option compose:caps
-exec slstatus &
+slstatus &
 exec dwm
