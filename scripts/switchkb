@@ -3,6 +3,6 @@
 layout="$(setxkbmap -query | grep layout | egrep -o [a-z]{2}$)"
 if [ "$layout" == "us" ]; then
     setxkbmap ru
-elif [ "$layout" = "us" ]; then
-    setxkbmap ru
+elif [ "$layout" = "ru" ]; then
+    setxkbmap us
 fi
