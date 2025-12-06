@@ -1,0 +1,22 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+# servers
+91.92.155.156	bucherschanze-test
+194.182.190.147	cloud-castle-mvp
+159.100.253.157	toldone-mvp
+91.92.154.200	guacamole
+91.92.203.99	desktop
+
+# private
+192.168.1.118	fileserver
+127.0.0.1	qp_elastic qp_postgres
+192.168.1.1	internetbox.swisscom.ch
+192.168.1.111	openbsd
+
+# no distractions
+127.0.0.1	voxday.net didacticmind.com smoothiex12.blogspot.com blog.fefe.de themins.com
+127.0.0.1	sigmagame.substack.com www.honest-broker.com simplicius76.substack.com
+127.0.0.1	formula1.com www.fis-ski.com srf.ch formel1.de heise.de telepolis.de
+127.0.0.1	www.youtube.com youtube.com bitchute.com old.bitchute.com tiktok.com
+127.0.0.1	debianforum.de wiki.debianforum.de marmaro.de
