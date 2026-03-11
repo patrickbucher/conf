@@ -16,7 +16,7 @@
 
 # no distractions
 127.0.0.1	voxday.net didacticmind.com smoothiex12.blogspot.com blog.fefe.de themins.com
-127.0.0.1	sigmagame.substack.com www.honest-broker.com simplicius76.substack.com
+127.0.0.1	sigmagame.substack.com www.honest-broker.com simplicius76.substack.com substack.com
 127.0.0.1	formula1.com www.fis-ski.com srf.ch formel1.de heise.de telepolis.de
 127.0.0.1	www.youtube.com youtube.com bitchute.com old.bitchute.com tiktok.com
 127.0.0.1	debianforum.de wiki.debianforum.de marmaro.de
