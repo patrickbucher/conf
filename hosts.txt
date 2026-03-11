@@ -20,3 +20,7 @@
 127.0.0.1	formula1.com www.fis-ski.com srf.ch formel1.de heise.de telepolis.de
 127.0.0.1	www.youtube.com youtube.com bitchute.com old.bitchute.com tiktok.com
 127.0.0.1	debianforum.de wiki.debianforum.de marmaro.de
+127.0.0.1	linkedin.com facebook.com instagram.com
+127.0.0.1	ironmaiden.com ironmaiden-deutschland.de forum.maidenfans.com
+127.0.0.1	saxon747.com acceptworldwide.com manowar.com judaspriest.com
+127.0.0.1	nostarch.com manning.com pragprog.com informit.com leanpub.com
