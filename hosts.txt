@@ -24,4 +24,4 @@
 127.0.0.1	linkedin.com facebook.com instagram.com
 127.0.0.1	ironmaiden.com ironmaiden-deutschland.de forum.maidenfans.com
 127.0.0.1	saxon747.com acceptworldwide.com manowar.com judaspriest.com
-127.0.0.1	nostarch.com manning.com pragprog.com informit.com leanpub.com
+127.0.0.1	nostarch.com manning.com pragprog.com informit.com leanpub.com oreilly.com
